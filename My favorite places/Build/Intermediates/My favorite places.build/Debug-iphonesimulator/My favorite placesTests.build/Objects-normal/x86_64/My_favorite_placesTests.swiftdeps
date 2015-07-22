@@ -4,21 +4,21 @@ provides:
 nominals:
 - "C23My_favorite_placesTests23My_favorite_placesTests"
 class-members:
-- "setUp"
-- "testPerformanceExample"
 - "tearDown"
 - "testExample"
+- "testPerformanceExample"
+- "setUp"
 top-level:
-- !private "StringLiteralType"
 - !private "XCTAssert"
 - "XCTestCase"
 - !private "BooleanLiteralType"
+- !private "StringLiteralType"
 member-access:
 - "CSo8NSObject"
+- !private "C23My_favorite_placesTests23My_favorite_placesTests"
+- "PSs9AnyObject"
 - "CSo6XCTest"
 - "CSo10XCTestCase"
-- "PSs9AnyObject"
-- !private "C23My_favorite_placesTests23My_favorite_placesTests"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"

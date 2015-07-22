@@ -4,19 +4,19 @@ provides:
 nominals:
 - "C18My_favorite_places19TableViewController"
 class-members:
-- "numberOfSectionsInTableView"
 - "didReceiveMemoryWarning"
+- "numberOfSectionsInTableView"
 - "tableView"
 - "viewDidLoad"
 top-level:
-- "UITableViewController"
 - "UITableView"
+- "UITableViewController"
 - "Int"
 member-access:
-- "CSo21UITableViewController"
 - "CSo8NSObject"
 - "C18My_favorite_places19TableViewController"
 - "PSs9AnyObject"
+- "CSo21UITableViewController"
 - "CSo16UIViewController"
 - "CSo11UIResponder"
 dynamic-lookup:

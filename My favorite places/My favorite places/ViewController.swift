@@ -45,6 +45,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
             var selectedPoint = gestureRecognizer.locationInView(mapView)
             var selectedCoordinate:CLLocationCoordinate2D = mapView.convertPoint(selectedPoint, toCoordinateFromView: mapView)
+            
+            var location = CLLocation(latitude: selectedCoordinate.latitude, longitude: selectedCoordinate.longitude)
+            CLGeocoder().reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
+                if (error == nil) {
+                    if let p = CLPlacemark(placemark: placemarks?[0] as! CLPlacemark) {
+                        
+                    }
+                }
+            })
+            
             var annotation = MKPointAnnotation()
             annotation.coordinate = selectedCoordinate
             

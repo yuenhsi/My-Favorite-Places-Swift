@@ -4,28 +4,28 @@ provides:
 nominals:
 - "C18My_favorite_places11AppDelegate"
 class-members:
-- "applicationWillResignActive"
 - "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
 - "window"
 - "applicationDidBecomeActive"
 - "application"
 - "applicationWillTerminate"
+- "applicationWillResignActive"
 top-level:
-- !private "BooleanLiteralType"
 - "UIWindow"
-- "AnyObject"
-- "UIApplication"
 - "UIApplicationDelegate"
-- "NSObject"
-- "Bool"
 - "UIResponder"
+- "NSObject"
+- "AnyObject"
+- "Bool"
+- "UIApplication"
+- !private "BooleanLiteralType"
 member-access:
-- "C18My_favorite_places11AppDelegate"
-- "PSo21UIApplicationDelegate"
+- "CSo11UIResponder"
 - "PSs9AnyObject"
 - "CSo8NSObject"
-- "CSo11UIResponder"
+- "C18My_favorite_places11AppDelegate"
+- "PSo21UIApplicationDelegate"
 dynamic-lookup:
 cross-module:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
