@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r9f-JL-yp6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="My_favorite_places" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="q5R-yi-N9e">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q5R-yi-N9e" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="0J3-aL-VYZ"/>
+                            <constraint firstItem="q5R-yi-N9e" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="ncy-it-Tgx"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="q5R-yi-N9e" secondAttribute="bottom" id="qmH-IY-Cyd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q5R-yi-N9e" secondAttribute="trailing" constant="-16" id="xwT-OX-83d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="q5R-yi-N9e" id="sKo-88-aya"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776" y="375"/>
+        </scene>
+        <!--My list of favorite locations-->
+        <scene sceneID="rJ4-xH-w7C">
+            <objects>
+                <tableViewController id="E40-QJ-SYg" customClass="TableViewController" customModule="My_favorite_places" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pyx-DW-uKS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="E40-QJ-SYg" id="NAZ-VT-CTd"/>
+                            <outlet property="delegate" destination="E40-QJ-SYg" id="YRH-gt-u4U"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My list of favorite locations" id="LZw-5R-kfJ">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="ZbR-MC-qvL">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="1Ny-Kl-5MS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yhy-Q0-iE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bl2-df-4aV">
+            <objects>
+                <navigationController id="r9f-JL-yp6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rt8-3i-U7F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E40-QJ-SYg" kind="relationship" relationship="rootViewController" id="dzH-Qc-Dgv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ld-xh-yFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="375"/>
+        </scene>
+    </scenes>
+</document>

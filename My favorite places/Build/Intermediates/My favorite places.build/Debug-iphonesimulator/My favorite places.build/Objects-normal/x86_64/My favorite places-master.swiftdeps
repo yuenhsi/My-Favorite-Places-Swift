@@ -1,0 +1,6 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "d8dc372f07a2f7f3817f16bdf6288b21"
+inputs: 
+- "/Users/yg/Desktop/Learning iOS/My favorite places/My favorite places/ViewController.swift"
+- "/Users/yg/Desktop/Learning iOS/My favorite places/My favorite places/TableViewController.swift"
+- "/Users/yg/Desktop/Learning iOS/My favorite places/My favorite places/AppDelegate.swift"
