@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1EB02ABD-1735-4119-B107-2F76DE387E4C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>My favorite places</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>38E76901A05A7903861A73ACA0B74451DBA41760</key>
+		<string>https://github.com/yuenhsi/My-Favorite-Places-Swift</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>My favorite places/My favorite places.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>38E76901A05A7903861A73ACA0B74451DBA41760</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yuenhsi/My-Favorite-Places-Swift</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>38E76901A05A7903861A73ACA0B74451DBA41760</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38E76901A05A7903861A73ACA0B74451DBA41760</string>
+			<key>IDESourceControlWCCName</key>
+			<string>My-Favorite-Places-Swift</string>
+		</dict>
+	</array>
+</dict>
+</plist>
